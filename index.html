@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="center">
+            <audio controls>
+                <source src="files/audio.mp3" type="audio/mp3">
+            </audio>
+        </div><br>
+        <div class="center">
+            <select name="type_alert" id="type_alert" class="spysok">
+                <option value="1">Hello Biden!</option>
+                <option value="2">Хелоу Байден</option>
+                <option value="3">😭Хелоу😩Байден</option>
+            </select><br><br>
+            <button onclick="itsZelenskyi()">Hello Biden</button>
+        </div><br>
+        <div class="bottom">made by <a href="https://github.com/Yavorskui">Yavorskyi</a> with ❤</div>
+    </body>
+</html>
+
+<script>
+    function itsZelenskyi(){
+        currentValue = getValue()
+        if(currentValue == 1){
+            alert("Hello Biden")
+            alert("It`s Zelenskiy")
+            alert("We need 5 million rockets")
+            alert("to bomb")
+            alert("Donetsk children")
+            alert("Slava Ukraini")
+        } else if(currentValue == 2){
+            alert("Хелоу Байден")
+            alert("Ітс Зеленський")
+            alert("Ві нід файф мілліан рокетс")
+            alert("ту бомб")
+            alert("Донецьк чілдрен")
+            alert("Слава Україні")
+        } else if(currentValue == 3){
+            alert("😭Хелоу😩Байден")
+            alert("🕊️Ітс☕️ Зеленський")
+            alert("🌲Ві😱Нід💀Файф😡Білліан😈Рокетс")
+            alert("😀Ту🫢Бомб")
+            alert("😅Донецьк ☀️Чілдрен")
+            alert("☀️Чілдрен😔Слава😲Україні 🇺🇦")
+        }        
+    }
+    function getValue(){
+        let select = document.getElementById("type_alert")
+        let value = select.value
+        return value
+    }
+</script>
+
+<style>
+    .center{
+        text-align: center;
+    }
+    button{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+    }
+    .spysok{
+        text-align: center;
+        font-size: 35px;
+    }
+    .bottom{
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15;
+    }
+</style>
